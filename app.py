@@ -29,7 +29,7 @@ def add_numbers_post():
   	      total = 0
   	      try:
   	      	for str_num in request.form['text'].split():
-  	      		total += int(str_num)
+  	      		total = int(str_num)
 			#if int(str_num) > total:
 				#total = int(str_num)
   	      	return render_template('add_numbers.html', result=str(total))
